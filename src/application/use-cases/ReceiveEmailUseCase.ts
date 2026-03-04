@@ -10,8 +10,8 @@ export interface ReceiveEmailInput {
 }
 
 export class ReceiveEmailUseCase {
-  private readonly RECIPIENT_EMAIL = process.env.MAILERSEND_FROM_EMAIL || ''
-  private readonly SENDER_EMAIL = process.env.MAILERSEND_FROM_EMAIL || '';
+private readonly RECIPIENT_EMAIL = process.env.MAILERSEND_TO_EMAIL || '';
+private readonly SENDER_EMAIL = process.env.MAILERSEND_FROM_EMAIL || '';
 
   constructor(
     private readonly emailRepository: IEmailRepository,
